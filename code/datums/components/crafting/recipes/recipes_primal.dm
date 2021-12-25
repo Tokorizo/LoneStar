@@ -348,38 +348,38 @@
 	always_availible = FALSE
 
 /datum/crafting_recipe/tribalwar/deathclawspear
-    name = "Deathclaw Spear"
-    result = /obj/item/twohanded/spear/bonespear/deathclaw
-    time = 240
-    reqs = list(/obj/item/stack/sheet/animalhide/deathclaw = 6,
-                /obj/item/stack/sheet/sinew = 2,
-                /obj/item/stack/sheet/bone = 8,
-                /obj/item/stack/sheet/mineral/wood = 10)
-    category = CAT_TRIBAL
-    tools = list(TOOL_WORKBENCH)
-    always_availible = FALSE
+	name = "Deathclaw Spear"
+	result = /obj/item/twohanded/spear/bonespear/deathclaw
+	time = 240
+	reqs = list(/obj/item/stack/sheet/animalhide/deathclaw = 6,
+				/obj/item/stack/sheet/sinew = 2,
+				/obj/item/stack/sheet/bone = 8,
+				/obj/item/stack/sheet/mineral/wood = 10)
+	category = CAT_TRIBAL
+	tools = list(TOOL_WORKBENCH)
+	always_availible = FALSE
 
 /datum/crafting_recipe/tribalwar/lightcloak
-    name = "Light Armored Cloak"
-    result = /obj/item/clothing/suit/armor/f13/lightcloak
-    time = 120
-    reqs = list(/obj/item/stack/sheet/animalhide/gecko = 8,
-                /obj/item/stack/sheet/leather = 6,
-                /obj/item/stack/crafting/goodparts = 1,
-                /obj/item/stack/sheet/cloth = 5)
-    category = CAT_TRIBAL
-    tools = list(TOOL_WORKBENCH)
-    always_availible = FALSE
+	name = "Light Armored Cloak"
+	result = /obj/item/clothing/suit/armor/f13/lightcloak
+	time = 120
+	reqs = list(/obj/item/stack/sheet/animalhide/gecko = 8,
+				/obj/item/stack/sheet/leather = 6,
+				/obj/item/stack/crafting/goodparts = 1,
+				/obj/item/stack/sheet/cloth = 5)
+	category = CAT_TRIBAL
+	tools = list(TOOL_WORKBENCH)
+	always_availible = FALSE
 
 /datum/crafting_recipe/tribalwar/legendaryclawcloak
-    name = "Legendary Deathclaw Cloak"
-    result = /obj/item/clothing/suit/hooded/cloak/hhunter
-    time = 300
-    reqs = list(/obj/item/melee/unarmed/deathclawgauntlet = 1,
-                /obj/item/stack/sheet/animalhide/chitin = 10,
-                /obj/item/stack/sheet/cloth = 5,
-                /obj/item/stack/sheet/sinew = 10,
-                /obj/item/stack/crafting/goodparts= 3)
-    category = CAT_TRIBAL
-    tools = list(TOOL_WORKBENCH)
-    always_availible = FALSE
+	name = "Legendary Deathclaw Cloak"
+	result = /obj/item/clothing/suit/hooded/cloak/hhunter
+	time = 300
+	reqs = list(/obj/item/melee/unarmed/deathclawgauntlet = 1,
+				/obj/item/stack/sheet/animalhide/chitin = 10,
+				/obj/item/stack/sheet/cloth = 5,
+				/obj/item/stack/sheet/sinew = 10,
+				/obj/item/stack/crafting/goodparts= 3)
+	category = CAT_TRIBAL
+	tools = list(TOOL_WORKBENCH)
+	always_availible = FALSE
