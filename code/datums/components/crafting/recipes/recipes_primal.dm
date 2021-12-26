@@ -179,6 +179,7 @@
 				/obj/item/stack/sheet/cloth = 5)
 	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)
+	always_availible = FALSE
 
 /datum/crafting_recipe/tribalwar/silverbow
 	name = "Silver Bow"
@@ -189,6 +190,7 @@
 				/obj/item/stack/crafting/metalparts = 5)
 	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)
+	always_availible = FALSE
 
 /datum/crafting_recipe/tribalwar/bonebow
 	name = "Deathclaw Bow"
@@ -208,6 +210,7 @@
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 10,
 				/obj/item/stack/sheet/sinew = 3)
 	category = CAT_TRIBAL
+	always_availible = FALSE
 
 /datum/crafting_recipe/tribalwar/crossbow
 	name = "CrossBow"
@@ -262,6 +265,7 @@
 				/obj/item/stack/sheet/sinew = 1)
 	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)
+	always_availible = FALSE
 
 //MELEE
 
@@ -272,6 +276,7 @@
 	reqs = list(/obj/item/stack/sheet/bone = 4,
 				/obj/item/stack/sheet/sinew = 1)
 	category = CAT_TRIBAL
+	always_availible = FALSE
 
 /datum/crafting_recipe/tribalwar/boneaxe
 	name = "Bone Axe"
@@ -280,6 +285,7 @@
 	reqs = list(/obj/item/stack/sheet/bone = 6,
 				/obj/item/stack/sheet/sinew = 3)
 	category = CAT_TRIBAL
+	always_availible = FALSE
 
 /datum/crafting_recipe/tribalwar/warclub
 	name = "Wooden Warclub"
@@ -289,6 +295,7 @@
 				/obj/item/stack/sheet/cloth = 1)
 	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)
+	always_availible = FALSE
 
 /datum/crafting_recipe/tribalwar/tribe_quiver
 	name = "Craft Quiver and Arrows"
@@ -297,6 +304,7 @@
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 8,
 				/obj/item/stack/sheet/metal = 4,
 				/obj/item/stack/sheet/leather = 1)
+	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)
 
 /datum/crafting_recipe/tribalwar/spearquiver
@@ -306,6 +314,7 @@
 	reqs = list(/obj/item/stack/sheet/leather = 3,
 				/obj/item/stack/sheet/metal = 1)
 	category = CAT_TRIBAL
+	always_availible = FALSE
 
 /datum/crafting_recipe/tribalwar/lighttribe
 	name = "Light Tribal Plates"
@@ -315,6 +324,7 @@
 				/obj/item/stack/sheet/cloth = 5)
 	category = CAT_TRIBAL
 	tools = list(TOOL_FORGE)
+	always_availible = FALSE
 
 /datum/crafting_recipe/tribalwar/heavytribe
 	name = "Heavy Tribal Plates"
@@ -324,6 +334,7 @@
 				/obj/item/stack/sheet/cloth = 5)
 	category = CAT_TRIBAL
 	tools = list(TOOL_FORGE)
+	always_availible = FALSE
 
 /datum/crafting_recipe/tribalwar/goliathcloak
 	name = "Deathclaw cloak"
