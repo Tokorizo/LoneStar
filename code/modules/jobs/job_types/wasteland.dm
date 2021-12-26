@@ -1370,7 +1370,7 @@ datum/job/wasteland/f13dendoctor
 
 
 	H.social_faction = FACTION_WASTELAND
-	add_verb(H, /mob/living/proc/createtribe)
+	//add_verb(H, /mob/living/proc/createtribe)
 
 /datum/outfit/job/wasteland/f13tribal
 	name = "Tribal"
