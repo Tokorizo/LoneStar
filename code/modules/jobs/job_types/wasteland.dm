@@ -1367,10 +1367,12 @@ datum/job/wasteland/f13dendoctor
 	/datum/outfit/loadout/gatherer)
 
 /datum/outfit/job/wasteland/f13tribal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-
+	..()
+	if(visualsOnly)
+		return
 
 	H.social_faction = FACTION_WASTELAND
-	//add_verb(H, /mob/living/proc/createtribe)
+	add_verb(H, /mob/living/proc/create_tribe)
 
 /datum/outfit/job/wasteland/f13tribal
 	name = "Tribal"

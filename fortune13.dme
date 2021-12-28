@@ -2095,6 +2095,7 @@
 #include "code\modules\fallout\misc\gangs.dm"
 #include "code\modules\fallout\misc\gangtool.dm"
 #include "code\modules\fallout\misc\overlays.dm"
+#include "code\modules\fallout\misc\tribes.dm"
 #include "code\modules\fallout\obj\bosbasepicker.dm"
 #include "code\modules\fallout\obj\campfire.dm"
 #include "code\modules\fallout\obj\crafting.dm"
