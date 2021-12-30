@@ -1450,26 +1450,31 @@ datum/job/wasteland/f13dendoctor
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHOBE, src)
 	H.grant_language(/datum/language/tribal)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/punji_sticks)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribal_combat_armor)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribal_combat_armor_helmet)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribal_pa)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribal_pa_helmet)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/chitinarmor)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/deathclawspear)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/lightcloak)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/legendaryclawcloak)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warpaint)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/goliathcloak)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/bonebow)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/tribe_bow)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/sturdybow)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/warclub)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/silverbow)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/arrowbone)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/bonespear)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/bonecodpiece)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/bracers)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribal/bonetalisman)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribal/bonebag)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalwar/spearquiver)
+	var/list/recipes = list(
+		/datum/crafting_recipe/punji_sticks,
+		/datum/crafting_recipe/tribal_combat_armor,
+		/datum/crafting_recipe/tribal_combat_armor_helmet,
+		/datum/crafting_recipe/tribal_pa,
+		/datum/crafting_recipe/tribal_pa_helmet,
+		/datum/crafting_recipe/tribalwar/chitinarmor,
+		/datum/crafting_recipe/tribalwar/deathclawspear,
+		/datum/crafting_recipe/tribalwar/lightcloak,
+		/datum/crafting_recipe/tribalwar/legendaryclawcloak,
+		/datum/crafting_recipe/warpaint,
+		/datum/crafting_recipe/tribalwar/goliathcloak,
+		/datum/crafting_recipe/tribalwar/bonebow,
+		/datum/crafting_recipe/tribalwar/tribe_bow,
+		/datum/crafting_recipe/tribalwar/sturdybow,
+		/datum/crafting_recipe/tribalwar/warclub,
+		/datum/crafting_recipe/tribalwar/silverbow,
+		/datum/crafting_recipe/tribalwar/arrowbone,
+		/datum/crafting_recipe/tribalwar/bonespear,
+		/datum/crafting_recipe/tribalwar/bonecodpiece,
+		/datum/crafting_recipe/tribalwar/bracers,
+		/datum/crafting_recipe/tribal/bonetalisman,
+		/datum/crafting_recipe/tribal/bonebag,
+		/datum/crafting_recipe/tribalwar/spearquiver
+	)
+ 
+	for(var/datum/crafting_recipe/recipe as() in recipes)
+		H.mind.teach_crafting_recipe(recipe)
