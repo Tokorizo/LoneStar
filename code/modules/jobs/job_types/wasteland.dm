@@ -1361,10 +1361,11 @@ datum/job/wasteland/f13dendoctor
 	minimal_access = list()
 
 	loadout_options = list(
-	/datum/outfit/loadout/skirmisher,
+	/datum/outfit/loadout/brawler,
 	/datum/outfit/loadout/bowman,
 	/datum/outfit/loadout/spearman,
-	/datum/outfit/loadout/gatherer)
+	/datum/outfit/loadout/gatherer,
+	/datum/outfit/loadout/wayfarer,)
 
 /datum/outfit/job/wasteland/f13tribal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -1389,12 +1390,13 @@ datum/job/wasteland/f13dendoctor
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder = 2
+		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
+		/obj/item/flashlight/lantern = 1,
 		)
 
 
-/datum/outfit/loadout/skirmisher
-	name = "Skirmisher"
+/datum/outfit/loadout/brawler
+	name = "Brawler"
 	suit = /obj/item/clothing/suit/armor/f13/tribal
 	head = /obj/item/clothing/head/helmet/f13/deathskull
 	backpack_contents = list(
@@ -1424,14 +1426,13 @@ datum/job/wasteland/f13dendoctor
 	neck = /obj/item/clothing/neck/mantle/gray
 	backpack_contents = list(
 		/obj/item/twohanded/spear = 1,
-		/obj/item/reagent_containers/pill/patch/bitterdrink = 1
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
 		)
 
 /datum/outfit/loadout/gatherer
 	name = "Gatherer"
 	suit = /obj/item/clothing/suit/hooded/cloak/desert
 	backpack_contents = list(
-		/obj/item/scythe=1,
 		/obj/item/storage/bag/plants=1,
 		/obj/item/cultivator=1,
 		/obj/item/reagent_containers/glass/bucket/wood=1,
@@ -1439,6 +1440,16 @@ datum/job/wasteland/f13dendoctor
 		/obj/item/melee/onehanded/knife/ritualdagger = 1,
 		/obj/item/stack/medical/gauze/improvised = 1,
 		/obj/item/reagent_containers/pill/patch/healingpowder = 1
+	)
+
+/datum/outfit/loadout/wayfarer
+	name = "Wayfarer"
+	suit = /obj/item/clothing/suit/armor/f13/lightcloak
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/wayfarer = 1,
+		/obj/item/clothing/head/helmet/f13/wayfarer/hunter = 1,
+		/obj/item/twohanded/spear/bonespear = 1,
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 1,
 	)
 
 /datum/outfit/job/wasteland/f13tribal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1449,6 +1460,7 @@ datum/job/wasteland/f13dendoctor
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHOBE, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	H.grant_language(/datum/language/tribal)
 	var/list/recipes = list(
 		/datum/crafting_recipe/punji_sticks,
