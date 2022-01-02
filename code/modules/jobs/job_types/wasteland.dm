@@ -358,7 +358,8 @@ Raider
 	/datum/outfit/loadout/raider_vault,
 	/datum/outfit/loadout/raider_ncr,
 	/datum/outfit/loadout/raider_legion,
-	/datum/outfit/loadout/raider_tribal,
+	/datum/outfit/loadout/quack_doctor,
+	/datum/outfit/loadout/raider_mobster,
 	)
 
 
@@ -615,6 +616,21 @@ Raider
 		/obj/item/melee/onehanded/knife/bone = 1,
 		)
 
+/datum/outfit/loadout/raider_mobster
+	name = "Den Mob Enforcer"
+	belt = /obj/item/storage/belt/military/assault
+	shoes = /obj/item/clothing/shoes/laceup
+	uniform = /obj/item/clothing/under/f13/densuit
+	suit = /obj/item/clothing/suit/armor/vest
+	gloves =  /obj/item/clothing/gloves/color/white
+	head = /obj/item/clothing/head/fedora 
+	mask =  /obj/item/clothing/mask/bandana/durathread
+	backpack_contents = list(
+		/obj/item/gun/ballistic/shotgun/police = 1,
+		/obj/item/melee/onehanded/knife/hunting = 1,
+		/obj/item/gun/ballistic/automatic/smg/rockwell = 1,
+		/obj/item/ammo_box/magazine/uzim9mm/rockwell = 2,
+		)
 
 /datum/job/wasteland/f13wastelander
 	title = "Wastelander"
