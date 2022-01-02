@@ -617,7 +617,7 @@ Raider
 		)
 
 /datum/outfit/loadout/raider_mobster
-	name = "Den Mob Enforcer"
+	name = "Mob Enforcer"
 	belt = /obj/item/storage/belt/military/assault
 	shoes = /obj/item/clothing/shoes/laceup
 	uniform = /obj/item/clothing/under/f13/densuit
