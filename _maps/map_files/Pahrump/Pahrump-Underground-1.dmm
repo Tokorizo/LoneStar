@@ -2662,6 +2662,12 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood/dorms)
+"bIT" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/water,
+/area/f13/den)
 "bJc" = (
 /obj/structure/nest/deathclaw,
 /turf/open/indestructible/ground/inside/subway{
@@ -7076,6 +7082,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/brotherhood/leisure)
+"elH" = (
+/obj/structure/nest/supermutant/melee,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "elU" = (
 /obj/structure/handrail/g_central{
 	dir = 4;
@@ -8623,7 +8633,6 @@
 /area/f13/den)
 "fjJ" = (
 /obj/effect/decal/cleanable/generic,
-/obj/effect/mob_spawn/human/corpse/charredskeleton,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/old{
 	pixel_x = 12
@@ -9088,9 +9097,9 @@
 	},
 /area/f13/tunnel)
 "fvt" = (
-/mob/living/simple_animal/hostile/ghoul/glowing,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess2"
+/obj/structure/nest/supermutant/nightkin,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
 	},
 /area/f13/caves)
 "fwa" = (
@@ -9191,7 +9200,7 @@
 	},
 /area/f13/den)
 "fzj" = (
-/mob/living/simple_animal/hostile/ghoul/glowing,
+/mob/living/simple_animal/hostile/supermutant/legendary,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -9412,7 +9421,10 @@
 	},
 /area/f13/followers)
 "fEq" = (
-/obj/structure/nest/ghoul,
+/obj/structure/nest/supermutant/ranged{
+	max_mobs = 1;
+	spawn_time = 100
+	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -9477,7 +9489,7 @@
 /obj/effect/decal/waste{
 	icon_state = "goo12"
 	},
-/mob/living/simple_animal/hostile/ghoul/legendary,
+/mob/living/simple_animal/hostile/supermutant/legendary,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -9555,7 +9567,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/operations)
 "fJQ" = (
-/mob/living/simple_animal/hostile/ghoul/glowing,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -9634,7 +9645,6 @@
 	pixel_x = 20;
 	pixel_y = 1
 	},
-/mob/living/simple_animal/hostile/ghoul/glowing,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -9699,6 +9709,12 @@
 /obj/effect/spawner/lootdrop/f13/armor/costumes,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"fOg" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/water,
+/area/f13/den)
 "fOk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt{
@@ -10636,8 +10652,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "gsS" = (
-/obj/structure/nest/ghoul{
-	max_mobs = 3
+/obj/structure/nest/supermutant/ranged{
+	max_mobs = 1;
+	spawn_time = 100
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
@@ -15384,7 +15401,11 @@
 	},
 /area/f13/caves)
 "jPz" = (
-/mob/living/simple_animal/hostile/ghoul/legendary,
+/obj/structure/nest/supermutant/melee{
+	max_mobs = 1;
+	spawn_once = 1;
+	spawn_time = 10
+	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
 "jPC" = (
@@ -18659,6 +18680,10 @@
 /obj/structure/simple_door/bunker,
 /obj/effect/mine/stun,
 /turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
+"mEd" = (
+/mob/living/simple_animal/hostile/supermutant/legendary,
+/turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
 "mEQ" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -29904,6 +29929,10 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/clinic)
+"uVE" = (
+/obj/structure/simple_door/metal/barred,
+/turf/open/water,
+/area/f13/den)
 "uVY" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/window/fulltile/house/broken,
@@ -32307,6 +32336,13 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/clinic)
+"wVP" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/water,
+/area/f13/den)
 "wWd" = (
 /obj/structure/bed/oldalt,
 /turf/open/floor/f13/wood,
@@ -33428,8 +33464,9 @@
 /area/f13/brotherhood/reactor)
 "xIV" = (
 /obj/effect/decal/waste,
-/obj/structure/nest/ghoul{
-	max_mobs = 3
+/obj/structure/nest/supermutant/ranged{
+	max_mobs = 1;
+	spawn_time = 100
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/caves)
@@ -33970,6 +34007,10 @@
 "yhT" = (
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/leisure)
+"yiw" = (
+/obj/structure/nest/supermutant/ranged,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/caves)
 "yix" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -66035,11 +66076,11 @@ vrQ
 vrQ
 vrQ
 vrQ
-vrQ
+bIT
 ckD
 fhe
 fhe
-fhe
+wVP
 fhe
 gol
 flG
@@ -67316,7 +67357,7 @@ wYo
 wYo
 wYo
 wYo
-omb
+uVE
 omb
 omb
 omb
@@ -67325,7 +67366,7 @@ kUN
 exn
 kUN
 kUN
-vrQ
+fOg
 vrQ
 uIm
 ntg
@@ -68068,8 +68109,8 @@ aUb
 wnQ
 dXE
 dXE
-dXE
-rDt
+gNa
+gWt
 hQE
 ixi
 cmH
@@ -68325,8 +68366,8 @@ aUb
 wnQ
 dXE
 dXE
-gNa
-gWt
+rDt
+hQE
 hQE
 dXE
 kTJ
@@ -69096,8 +69137,8 @@ aUb
 wnQ
 dXE
 dXE
-gJn
-gxB
+rDt
+hQE
 hQE
 dXE
 kTJ
@@ -69353,8 +69394,8 @@ aUb
 wnQ
 dXE
 dXE
-dXE
-rDt
+gJn
+gxB
 hQE
 izB
 cYb
@@ -69609,7 +69650,7 @@ wWB
 bnM
 wnQ
 dXE
-uPr
+dXE
 dXE
 rDt
 hQE
@@ -76042,20 +76083,20 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
 dXE
 rDt
 dXE
@@ -76299,20 +76340,20 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
 dXE
 rDt
 dXE
@@ -76556,20 +76597,20 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
 pYd
 pYd
 pYd
 pYd
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
 dXE
 rDt
 dXE
@@ -76813,20 +76854,20 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
+dXE
+dXE
 eCe
 pYd
 eHA
 frm
 pYd
 pYd
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
+dXE
+dXE
+dXE
 dXE
 rDt
 dXE
@@ -77070,8 +77111,8 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
+dXE
+dXE
 pYd
 eEt
 ePn
@@ -77081,9 +77122,9 @@ pYd
 pYd
 pYd
 pYd
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
 dXE
 rDt
 dXE
@@ -77327,8 +77368,8 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
+dXE
+dXE
 pYd
 eFi
 eWN
@@ -77338,9 +77379,9 @@ ePn
 sgn
 eBg
 pYd
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
 dXE
 rDt
 dXE
@@ -77584,8 +77625,8 @@ dXE
 iUn
 cSY
 dXE
-uoO
-uoO
+dXE
+dXE
 pYd
 eHs
 eXS
@@ -77597,7 +77638,7 @@ gmM
 pYd
 pYd
 pYd
-uoO
+dXE
 dXE
 rDt
 dXE
@@ -77841,8 +77882,8 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
+dXE
+dXE
 pYd
 pYd
 eYS
@@ -78098,9 +78139,9 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
 pYd
 fed
 fed
@@ -78355,9 +78396,9 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
 pYd
 fed
 fed
@@ -78612,9 +78653,9 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
 pYd
 gqc
 ggH
@@ -78869,9 +78910,9 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
 pYd
 hzg
 eBg
@@ -79126,9 +79167,9 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
 pYd
 eBg
 gmM
@@ -79383,9 +79424,9 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
 eCe
 pYd
 pYd
@@ -79640,11 +79681,11 @@ dXE
 iUn
 cSY
 dXE
-uoO
-uoO
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
+dXE
+dXE
 pYd
 fLU
 mmv
@@ -79897,11 +79938,11 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
+dXE
+dXE
 pYd
 hvU
 jii
@@ -80154,11 +80195,11 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
+dXE
+dXE
 pYd
 mmv
 fLU
@@ -80411,11 +80452,11 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
+dXE
+dXE
 pYd
 hKG
 jmN
@@ -80668,11 +80709,11 @@ dXE
 cSY
 cSY
 dXE
-uoO
-uoO
-uoO
-uoO
-uoO
+dXE
+dXE
+dXE
+dXE
+dXE
 eCe
 pYd
 pYd
@@ -84774,13 +84815,13 @@ dXE
 dXE
 gxS
 dXE
-uoO
-uoO
+dXE
+dXE
 chR
 jZT
 chR
-uoO
-uoO
+dXE
+dXE
 dXE
 gxS
 tur
@@ -85031,13 +85072,13 @@ dXE
 dXE
 gxS
 dXE
-uoO
-uoO
+dXE
+dXE
 chR
 jZT
 chR
-uoO
-uoO
+dXE
+dXE
 dXE
 gxS
 tur
@@ -85288,13 +85329,13 @@ dXE
 dXE
 gxS
 dXE
-uoO
+dXE
 fLU
 fLU
 sgn
 fLU
 fLU
-uoO
+dXE
 dXE
 gxS
 tur
@@ -94031,7 +94072,7 @@ hOE
 myy
 myy
 gha
-dEG
+yiw
 gUq
 hSh
 myy
@@ -94542,7 +94583,7 @@ gha
 myy
 myy
 hSh
-myy
+elH
 myy
 myy
 myy
@@ -94550,7 +94591,7 @@ myy
 hOE
 myy
 myy
-myy
+jPz
 dQl
 myy
 myy
@@ -94795,7 +94836,7 @@ cYb
 hQE
 gil
 myy
-myy
+jPz
 myy
 myy
 hZW
@@ -94810,7 +94851,7 @@ myy
 myy
 myy
 gha
-myy
+elH
 myy
 myy
 myy
@@ -95056,7 +95097,7 @@ myy
 myy
 fUf
 hOE
-gsS
+myy
 myy
 myy
 myy
@@ -95064,7 +95105,7 @@ myy
 hOE
 myy
 dDp
-gsS
+myy
 myy
 myy
 myy
@@ -95308,7 +95349,7 @@ hQE
 hQE
 hQE
 myy
-gsS
+myy
 myy
 myy
 myy
@@ -95565,7 +95606,7 @@ lhr
 fIS
 hQE
 myy
-myy
+jPz
 myy
 gWJ
 gha
@@ -95582,7 +95623,7 @@ gWJ
 myy
 myy
 gWJ
-jPz
+myy
 myy
 myy
 uoO
@@ -95830,7 +95871,7 @@ hSh
 myy
 myy
 gWJ
-myy
+gsS
 myy
 nLP
 myy
@@ -96331,8 +96372,8 @@ uoO
 eLE
 hQE
 hQE
-fvt
-fzj
+fRK
+fHC
 fLq
 hQE
 myy
@@ -96590,7 +96631,7 @@ hQE
 hQE
 fwa
 fHC
-fHC
+fzj
 hQE
 myy
 myy
@@ -96598,7 +96639,7 @@ myy
 gZR
 myy
 hOE
-jPz
+myy
 myy
 gZR
 myy
@@ -96845,7 +96886,7 @@ uoO
 eLE
 hQE
 hQE
-fzj
+fHC
 fHi
 fLW
 hQE
@@ -97375,7 +97416,7 @@ gWJ
 myy
 myy
 hOE
-gsS
+myy
 myy
 gWJ
 myy
@@ -97617,7 +97658,7 @@ eLE
 hQE
 hQE
 mUC
-fHC
+fvt
 fHC
 hQE
 myy
@@ -97632,7 +97673,7 @@ gWJ
 myy
 myy
 hOE
-myy
+jPz
 myy
 gWJ
 dDp
@@ -98146,7 +98187,7 @@ gWJ
 myy
 myy
 hOE
-myy
+mEd
 myy
 gWJ
 myy
