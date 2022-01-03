@@ -14733,7 +14733,6 @@
 /area/f13/caves)
 "jqr" = (
 /obj/structure/table,
-/obj/item/uplink/old,
 /turf/open/floor/f13{
 	icon_state = "greendirtyfull"
 	},
