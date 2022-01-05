@@ -7936,7 +7936,7 @@
 	},
 /area/f13/caves)
 "eFv" = (
-/obj/structure/closet/crate/trashcart/moneywish,
+/obj/structure/closet/crate/trashcart,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/caves)
 "eFU" = (
@@ -9784,12 +9784,6 @@
 "fIG" = (
 /obj/structure/simple_door/wood,
 /turf/open/floor/plating/tunnel,
-/area/f13/caves)
-"fIS" = (
-/obj/structure/nest/ghoul,
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelchess2"
-	},
 /area/f13/caves)
 "fJp" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -94883,7 +94877,7 @@ hQE
 hQE
 gUq
 gUq
-gha
+myy
 hQE
 hQE
 hQE
@@ -95652,7 +95646,7 @@ cmH
 fSl
 myy
 myy
-gha
+myy
 myy
 myy
 hSh
@@ -95670,7 +95664,7 @@ myy
 myy
 nwe
 myy
-cWe
+myy
 myy
 uoO
 eLE
@@ -96676,7 +96670,7 @@ hQE
 hQE
 foY
 lhr
-fIS
+fRK
 hQE
 myy
 myy
@@ -97468,7 +97462,7 @@ myy
 myy
 gWJ
 myy
-uTE
+myy
 myy
 myy
 uoO
@@ -99003,7 +98997,7 @@ gWJ
 myy
 myy
 hOE
-dFm
+myy
 myy
 gWJ
 myy
